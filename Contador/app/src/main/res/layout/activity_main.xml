@@ -22,15 +22,16 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/botonIncrementar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
+            android:onClick="incrementarContador()"
             android:text="+"
             android:textSize="34sp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/contador"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -39,22 +40,24 @@
             android:textSize="34sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/botonDecrementar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
+            android:onClick="decrementarContador()"
             android:text="-"
             android:textSize="34sp" />
 
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/botonReiniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:layout_weight="1"
+        android:onClick="reiniciarContador()"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
 </LinearLayout>
